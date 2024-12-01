@@ -1,0 +1,75 @@
+/* dashboard.css */
+
+.container {
+  padding: 20px;
+}
+
+.popup {
+  background-color: #f8d7da; /* Light red background for alerts */
+  color: #721c24; /* Darker text color for contrast */
+  padding: 15px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #282c34;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items */
+  gap: 20px; /* Space between items */
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px; /* Fixed width for items */
+}
+
+.item.large {
+  flex: 0 0 100%; /* Full width for the large item */
+}
+
+h2 {
+  color: #61dafb; /* Blue color for section titles */
+}
+
+ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+li {
+  color: #333; /* Dark text for items */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .grid {
+    flex-direction: column; /* Stack items on small screens */
+  }
+
+  .item {
+    width: 90%; /* Full width on smaller screens */
+  }
+}
